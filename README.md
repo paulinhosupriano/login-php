@@ -1,7 +1,7 @@
 # Tela de Login 
 No desenvolvimento web, autenticação de usuários é algo bastante comum e serve como mecanismo de segurança para acessos não autorizados a um ambiente onde somente quem tem cadastro pode entrar, como uma área de membros. 
 
-Login e uma senha padrão quando o usuário tentar efetuar o login, verificaremos se os valores são identicos aos definidos por padrão.
+Para acessar ao sistema será necessário utilizar um login(e-mail) e uma senha padrão, configurada na constante AUTENTICATION do arquivo load.php da raiz.
 
 #### Dados de login para autenticar.
 Login: admin@admin.com | Senha: admin
