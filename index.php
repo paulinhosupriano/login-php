@@ -1,4 +1,8 @@
-<?php require_once('load.php');?>
+<?php
+
+use Core\Message;
+
+ require_once('load.php');?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -28,7 +32,7 @@
             <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
 
             <div class="messageResponse">
-                <?php echo getMessage(); ?>
+                <?php echo Message::getMessage(); ?>
             </div>
             <p class="mt-5 mb-3 text-center">com muito amor - <a href="https://www.facebook.com/paulinhosupriano" target="_blank" class="copyright">paulinhosupriano</a> </p>
         </form>

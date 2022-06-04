@@ -1,13 +1,16 @@
 <?php
+
+use Core\Auth;
+use Core\Message;
+use Core\Redirect;
+
 require_once('load.php');
 
-if (!isAuth()) {
-  setMessage("Favor identifique-se.", 'warning');
-  redirect('index.php');
+if (!Auth::isAuth()) {
+  Message::setMessage("Favor identifique-se.", 'warning');
+  Redirect::uri('/index.php');
 }
-
-isLogoff();
-
+  Auth::isLogoff();
 ?>
 <!doctype html>
 <html lang="pt-br" class="h-100">
