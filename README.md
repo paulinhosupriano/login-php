@@ -7,7 +7,8 @@ Para acessar ao sistema será necessário utilizar um login(e-mail) e uma senha 
 Login: admin@admin.com | Senha: admin
 
 
-### Funções 
+
+### Classes Core Actions
 * auth($login, $password) Checa login e senha confere com os dados da CONSTANTE de configuração confere com os dados informado retorna: TRUE | FALSE.
 * isAuth() - Verifica se a autenticação existe, retorna TRUE | FALSE. 
 * redirect($uri) Redireciona para uri informada.

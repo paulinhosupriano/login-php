@@ -1,17 +1,3 @@
-<?php
-
-use Core\Auth;
-use Core\Message;
-use Core\Redirect;
-
-require_once('load.php');
-
-if (!Auth::isAuth()) {
-  Message::setMessage("Favor identifique-se.", 'warning');
-  Redirect::uri('/index.php');
-}
-  Auth::isLogoff();
-?>
 <!doctype html>
 <html lang="pt-br" class="h-100">
 
@@ -20,9 +6,9 @@ if (!Auth::isAuth()) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Painel de Administração</title>
 
-  <link href="assets/bootstrap-5.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{URI}}/view/assets/bootstrap-5.2.0/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="assets/css/dash.css" rel="stylesheet">
+  <link href="{{URI}}/view/assets/css/dash.css" rel="stylesheet">
 </head>
 
 <body class="d-flex h-100 text-center text-white bg-dark">
@@ -35,7 +21,7 @@ if (!Auth::isAuth()) {
           <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
           <a class="nav-link fw-bold py-1 px-0" href="#">Sobre</a>
           <a class="nav-link fw-bold py-1 px-0" href="#">Contato</a>
-          <a class="nav-link fw-bold py-1 px-0" href="?sair=true">Sair</a>
+          <a class="nav-link fw-bold py-1 px-0" href="{{URI}}/sair">Sair</a>
         </nav>
       </div>
     </header>

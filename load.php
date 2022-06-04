@@ -2,13 +2,13 @@
 ob_start();
 session_start();
 
-define('AUTENTICATION',[
+define('AUTENTICATION', [
     'email' => 'admin@admin.com',
     'senha' => 'admin'
 ]);
 
-define('URI','https://localhost/login-php');
-define('DS',DIRECTORY_SEPARATOR);
-define('PATH',__DIR__);
+define('URI', 'https://localhost/login-php');
+define('DS', DIRECTORY_SEPARATOR);
+define('PATH', __DIR__);
 
-require_once(PATH.DS.'vendor/autoload.php');
+require_once(PATH . DS . 'vendor/autoload.php');

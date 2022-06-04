@@ -1,8 +1,13 @@
 {
- "autoload": {
-     "psr-4": {
-         "Controller\\":"app/controller/",
-         "Core\\":"app/core/"
-     }
- }   
+    "autoload": {
+        "psr-4": {
+            "Controller\\": "app/controller/",
+            "Core\\": "app/core/",
+            "Models\\": "app/models/"
+        }
+    },
+    "require": {
+        "coffeecode/router": "1.0.8",
+        "twig/twig": "^3.4"
+    }
 }
